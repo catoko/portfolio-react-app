@@ -40,15 +40,14 @@ const Navbar = () => {
             <li className='py-6 text-4xl'><Link onClick={handleClick} to='work' smooth={true} duration={500}>Work</Link></li>
             <li className='py-6 text-4xl'><Link onClick={handleClick} to='contact' smooth={true} duration={500}>Contact</Link></li>
         </ul>
-
-        {/* Social Icons 
+        {/* Social Icons  */}
         <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'><a className='flex justify-between items-center w-full text-gray-300' href='#'>LinkedIn <FaLinkedin size={30} /></a></li>
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'><a  className='flex justify-between items-center w-full text-gray-300' href='#'>Github <FaGithub size={30} /></a></li>
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#44776c]'><a className='flex justify-between items-center w-full text-gray-300' href='#'>Email <HiOutlineMail size={30} /></a></li>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'><a className='flex justify-between items-center w-full text-gray-300' href='www.linkedin.com/in/yeon-kim-catoko' target={'_blank'}>LinkedIn <FaLinkedin size={30} /></a></li>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'><a  className='flex justify-between items-center w-full text-gray-300' href='https://github.com/catoko' target={'_blank'}>Github <FaGithub size={30} /></a></li>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#44776c]'><a className='flex justify-between items-center w-full text-gray-300' href='mailto:hello@yeonkim.com'>Email <HiOutlineMail size={30} /></a></li>
             <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'><a className='flex justify-between items-center w-full text-gray-300' href='#'>Resume <BsFillPersonLinesFill size={30} /></a></li>  
-        </div>
-        */}
+        </div>      
+        
     </div>
   )
 }
