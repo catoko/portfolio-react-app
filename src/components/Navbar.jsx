@@ -2,12 +2,15 @@ import React, {useState} from 'react'
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
+import {FcLikePlaceholder, FcLike} from 'react-icons/fc'
 import Logo from '../asserts/logo2.png'
 import {Link} from 'react-scroll'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
+    // const [like,setLike] = useState(false);
+
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-[10000]'>
@@ -24,6 +27,7 @@ const Navbar = () => {
                 <li><Link to='skills' smooth={true} duration={500}>Skills</Link></li>
                 <li><Link to='work' smooth={true} duration={500}>Work</Link></li>
                 <li><Link to='contact' smooth={true} duration={500}>Contact</Link></li>
+                 {/*<li onClick={()=>setLike((prevLike) => !prevLike )} className='flex text-3xl'>{like ? <FcLike /> : <FcLikePlaceholder />}</li>*/}
             </ul>
         </div>
         
